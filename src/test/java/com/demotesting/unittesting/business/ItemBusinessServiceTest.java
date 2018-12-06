@@ -23,6 +23,7 @@ public class ItemBusinessServiceTest {
 
     @Mock
     private ItemRepository repository;
+
     @Test
     public void retrieveAllItems_basic() {
         when(repository.findAll()).thenReturn(Arrays.asList(new Item(2, "Item2", 10, 10),
